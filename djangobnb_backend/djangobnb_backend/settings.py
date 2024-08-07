@@ -21,9 +21,9 @@ DEBUG = True #bool(os.environ.get("DEBUG", default=0))
 
 
 if DEBUG:
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "64.226.81.32"]
+    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "172.18.0.3"]
 else:
-    ALLOWED_HOSTS = ["64.226.81.32"]
+    ALLOWED_HOSTS = ["172.18.0.3"]
 
 
 AUTH_USER_MODEL = 'useraccount.User' 
@@ -33,7 +33,7 @@ SITE_ID = 1
 if DEBUG:
     WEBSITE_URL = "http://localhost:8000"
 else:
-        WEBSITE_URL = "http:65.1.18.54:1337"
+    WEBSITE_URL = "http:172.18.0.3:1337"
 
 
 CHANNEL_LAYERS = {
@@ -70,21 +70,21 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
-    'http://65.1.18.54:1337',
-    'http://65.1.18.54:1337:1337',
+    'http://172.18.0.3:1337',
+    'http://172.18.0.3:1337:1337',
 ]
 
 CORS_TRUSTED_ORIGINS = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
-    'http://65.1.18.54:1337',
-    'http://65.1.18.54:1337:1337',
+    'http://172.18.0.3:1337',
+    'http://172.18.0.3:1337:1337',
 ]
 CORS_ORIGINS_WHITELIST = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
-    'http://65.1.18.54:1337',
-    'http://65.1.18.54:1337:1337',
+    'http://172.18.0.3:1337',
+    'http://172.18.0.3:1337:1337',
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
