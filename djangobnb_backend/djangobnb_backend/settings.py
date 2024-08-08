@@ -23,7 +23,7 @@ DEBUG = True #bool(os.environ.get("DEBUG", default=0))
 if DEBUG:
     ALLOWED_HOSTS = ["localhost", "127.0.0.1", "172.18.0.3"]
 else:
-    ALLOWED_HOSTS = ["172.18.0.3"]
+    ALLOWED_HOSTS = ["172.18.0.3","65.1.18.54"]
 
 
 AUTH_USER_MODEL = 'useraccount.User' 
