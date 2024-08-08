@@ -79,6 +79,7 @@ CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:3000',
     'http://172.18.0.3:1337',
     'http://172.18.0.3:1337:1337',
+    'http://65.1.18.54'
 ]
 CORS_ORIGINS_WHITELIST = [
     'http://127.0.0.1:8000',
